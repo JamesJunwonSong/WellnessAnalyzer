@@ -98,11 +98,11 @@ public class WellnessAnalyzer {
         double median = 0;
         if (wellnessScores.size() % 2 == 0)
         {
-            median = (wellnessScores.get((wellnessScores.size() / 2) - 1) + wellnessScores.get(wellnessScores.size() / 2)) / 2;
+            median = (wellnessScores.get((wellnessScores.size() / 2)) + wellnessScores.get(wellnessScores.size() / 2) + 1) / 2;
         }
         else
         {
-            median = wellnessScores.get((wellnessScores.size() / 2) - 1);
+            median = wellnessScores.get((wellnessScores.size() / 2) + 1);
         }
 
         double stdDev = 0;
